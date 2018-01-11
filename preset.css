@@ -11,11 +11,14 @@ A simple CSS preset to enable box-sizing, set some text rendering options.
 */
 
 * {
-	box-sizing: border-box;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	font-kerning: auto;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
 }
 
 html {
